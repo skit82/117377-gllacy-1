@@ -11,14 +11,29 @@
 	  			<ul>
 	  				<li><a href="catalog.html">Каталог</a>
 						<ul>
-							<li><a href="">Сливочное</a></li>
-							<li><a href="">Щербеты</a></li>
-							<li><a href="">Фруктовый лед</a></li>
-							<li><a href="">Мелорин</a></li>
+							<li class="new-items">
+								<a href="">Новинки</a>
+							</li>
+							<li>
+								<a href="">Сливочное</a>
+							</li>
+							<li>
+								<a href="">Щербеты</a>
+							</li>
+							<li>
+								<a href="">Фруктовый лед</a>
+							</li>
+							<li>
+								<a href="">Мелорин</a>
+							</li>
 						</ul>
 	  				</li>
-	  				<li><a href="service">Доставка и оплата</a></li>
-	  				<li><a href="company">О компании</a></li>
+	  				<li>
+	  					<a href="service">Доставка и оплата</a>
+	  				</li>
+	  				<li>
+	  					<a href="company">О компании</a>
+	  				</li>
 	  			</ul>
 	  		</nav>
 	  			<ul class="user-navigation">
@@ -33,14 +48,20 @@
 	  						<input type="text" name="email" id="email-field" placeholder="Электронная почта"></input>
 	  						<label for="password-field"></label>
 	  						<input type="password" name="password" id="password-field" placeholder="Пароль"></input>
-	  						<input type="submit" value="Войти"></input>
-	  						<a href="#">Забыли пароль?</a>
-	  						<a href="#">Новая регистрация</a>
+	  						<button type="submit" value="Войти">
+	  							Войти
+	  						</button>
+	  						<p class="">
+	  							<a href="#">Забыли пароль?</a>
+	  						</p>
+	  						<p class="">
+	  							<a href="#">Новая регистрация</a>
+	  						</p>
 	  					</form>
 	  				<li class="basket"><a href="#">Пусто</a></li>
 	  			</ul>
 	  			<div class="contact">c 10 до 20, ежедневно
-	  			<a href="tel">8 812 450-25-25</a></div>
+	  			<a href="tel:88124502525">8 812 450-25-25</a></div>
   	</header>
   	<main class="container">
   		<section>
@@ -66,9 +87,9 @@
   						<p>
   							Пломбир с помадкой и клубничный щербет
   						</p>
-  						<button class="btn-ice">
-  							<a href="#">Давайте оба!</a>
-  						</button>
+  						<p>
+  							<a class="btn-ice" href="#">Давайте оба!</a>
+  						</p>
   					</div>
   				</div>
   			</div>
@@ -79,18 +100,18 @@
 				<p>
 					При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
 				</p>
-				<button class="banner-item-btn">
+				<p class="banner-item-btn">
 					<a href="#">Хочу варенье!</a>
-				</button>
+				</p>
 			</div>
 			<div class="banner-item-2">
 				<h2>Шоколадки даром!</h2>
 				<p>
 					При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
 				</p>
-				<button class="banner-item-btn">
-					<a href="#">Хочу шоколадки!-</a>
-				</button>
+				<p class="banner-item-btn">
+					<a href="#">Хочу шоколадки!</a>
+				</p>
 			</div>  			
   		</section>
   		<section class="catalog">
@@ -100,7 +121,9 @@
   					<img src="" alt="Сливочное с апельсином">
   					<p>310 /<span class="catalog-kg">кг</span></p>
   					<h3>
-  						Сливочное с апельсиновым джемом и цитрусовой стружкой
+  						<a href="">
+  							Сливочное с апельсиновым джемом и цитрусовой стружкой
+  						</a>
   					</h3>
   				</li>
   				<li class="catalog-item">
@@ -108,7 +131,9 @@
   					<img src="" alt="Сливочно-кофейное">
   					<p>380 /<span class="catalog-kg">кг</span></p>
   					<h3>
-  						Сливочно-кофейное с кусочками шоколада
+  						<a href="">
+  							Сливочно-кофейное с кусочками шоколада
+  						</a>
   					</h3>
   				</li>
   				<li class="catalog-item">
@@ -116,7 +141,9 @@
   					<img src="" alt="Сливочно-клубничное">
   					<p>355 /<span class="catalog-kg">кг</span></p>
   					<h3>
-  						Сливочно-клубничное с присыпкой из белого шоколада
+  						<a href="">
+  							Сливочно-клубничное с присыпкой из белого шоколада
+  						</a>
   					</h3>
   				</li>
   				<li class="catalog-item">
@@ -124,7 +151,9 @@
   					<img src="" alt="Сливочное-крем-брюле">
   					<p>415 /<span class="catalog-kg">кг</span></p>
   					<h3>
-  						Сливочное крем-брюле с карамельное подливкой
+  						<a href="">
+  							Сливочное крем-брюле с карамельное подливкой
+  						</a>
   					</h3>
   				</li>
   			</ul>
@@ -156,7 +185,7 @@
 					</li>	
 				</ul>
   		</section>
-  		<article class="blog">
+  		<section class="blog">
   			<p>
   				<span>Новое в нашем блоге</span>
   			</p>
@@ -165,7 +194,7 @@
 					10 способов сервировки фруктовых щербетов к столу
 				</a>
 			</p>
-  		</article>
+  		</section>
   		<article class="mail-list">
   			<p>
   				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, уто у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
@@ -177,24 +206,31 @@
   			</form>
   		</article>
   		<section class="map-list">
-  			<img src="map.png" usemap="#map" alt="Карта">
   			<map name="map">
   				
   			</map>
   				<div class="address">
   					<p class="address-contact">
-  						Адресс главного офиса и</br>
-  						офлайн магазина:</br>
+  						<p>
+  							Адресс главного офиса и
+  							офлайн магазина:
+  						</p>
   						<b>
-  							ул. Большая Конюшенная</br>
+  							ул. Большая Конюшенная
   							19/8, Санкт-Петербург
-  						</b></br>
-  						Для заказов по телефону:</br>
-  						<a href="tel">8 812 450-25-25</a></br>
-  						(с 10 до 20 ежедневно)</br>
-  						<button class="address-contact-btn">
-  							<a href="#">Форма обратной связи</a>
-  						</button>
+  						</b>
+  						<p>
+  							Для заказов по телефону:
+  						</p>
+  						<p>
+  							<a href="tel:8124502525">
+  								8 812 450-25-25
+  							</a>
+  							(с 10 до 20 ежедневно)
+  						</p>
+  						<a class="address-contact-btn" href="">
+  							Форма обратной связи
+  						</a>
   					</p>
   				</div>
   		</section>
@@ -226,11 +262,14 @@
 		</div>
 		<div class="footer-copyright">
 			<img src="img/index-logo.svg" width="120" height="100" alt="Логотип Htmlacademy">
-			<p>Сделано в HTML academy @2017</p>
+			<p>
+				Сделано в <a href="https://htmlacademy.ru">
+				HTML academy</a> @2017
+			</p>
 		</div>
   	</footer>
 
-  	<section class="modal modal-name">
+  	<div class="modal modal-name">
   		<p>Мы обязательно вам ответим!</p>
   		<form class="name-form" action="" method="">
   			<p>
@@ -252,6 +291,6 @@
   			</button>
   		</form>
   		<span class="model-close">x</span>
-  	</section>
+  	</div>
   </body>
 </html>

@@ -7,7 +7,7 @@
 	<body>
 		<header class="main-header">
 			<a class="main-header-logo" href="index.html">
-  				<img src="img/logo.svg" width="85" height="60" alt="Логотип Глейси">
+                <img src="img/logo.svg" width="85" height="60" alt="Логотип Глейси">
   			</a>
 	  		<nav class="main-navigation">
 	  			<ul>
@@ -67,16 +67,16 @@
   					<fieldset>
 						<legend>Сортировка:</legend>
 						<select name="popularity">
-							<option value="">
+							<option value="по полулярности">
 								по популярности
 							</option>
-							<option value="">
+							<option value="сначало недорогие">
 								сначало недорогие
 							</option>
-							<option value="">
+							<option value="сначало дорогие">
 								сначало дорогие
 							</option>
-							<option value="">
+							<option value="по жирности">
 								по жирности
 							</option>
 						</select>
@@ -84,27 +84,35 @@
   					<fieldset>
   						<legend>Цена: 100 руб. - 500 руб.</legend>
   						<label for="price"></label>
-  						<input type="range" name="price" id="price"></input>
+  						<input type="range" name="price" id="price">
   					</fieldset>
   					<fieldset>
   						<legend>Жирность:</legend>
-  						<input type="radio" name="fat" value="0%">0%</input>
-  						<input type="radio" name="fat" value="до 10%" checked>до 10%></input>
-  						<input type="radio" name="fat" value="до 30%">до 30%</input>
-  						<input type="radio" name="fat" value="выше 30%">выше 30%</input>
+                        <label>
+  						    <input type="radio" name="fat" value="0%">0%
+                        </label>
+                        <label>
+  						    <input type="radio" name="fat" value="до 10%" checked>до 10%>
+                        </label>
+                        <label>
+  						    <input type="radio" name="fat" value="до 30%">до 30%
+                        </label>
+                        <label>
+  						    <input type="radio" name="fat" value="выше 30%">выше 30%
+                        </label>
   					</fieldset>
   					<fieldset>
   						<legend>Наполнители:</legend>
-  						<input type="checkbox" name="filler-1" id="filler-field" checked>
-  						<label for="filler-field">шоколадные</label>
-  						<input type="checkbox" name="filler-2" id="filler-field" checked>
-  						<label for="filler-field">сахарные присыпки</label>
-  						<input type="checkbox" name="filler-3" id="filler-field">
-  						<label for="filler-field">фрукты</label>
-  						<input type="checkbox" name="filler-4" id="filler-field">
-  						<label for="filler-field">сиропы</label>
-  						<input type="checkbox" name="filler-5" id="filler-field">
-  						<label for="filler-field">джемы</label>
+  						<input type="checkbox" name="filler-cocoa" id="filler-cocoa-field" checked>
+  						<label for="filler-cocoa-field">шоколадные</label>
+  						<input type="checkbox" name="filler-sugar" id="filler-sugar-field" checked>
+  						<label for="filler-sugar-field">сахарные присыпки</label>
+  						<input type="checkbox" name="filler-fruit" id="filler-fruit-field">
+  						<label for="filler-fruit-field">фрукты</label>
+  						<input type="checkbox" name="filler-syrups" id="filler-syrups-field">
+  						<label for="filler-syrups-field">сиропы</label>
+  						<input type="checkbox" name="filler-jams" id="filler-jams-field">
+  						<label for="filler-jams-field">джемы</label>
   						<button type="submit">Применить</button>
   					</fieldset>
   				</form>
@@ -156,7 +164,6 @@
   					</li>
   					<li class="product-item">
   						<img src="" alt="Сливочно-лимонное с карамельной присыпкой">
-  						</a>
   						<span class="product-vt">375 /кг</span>
   						<a class="product-name" href="">
   							Сливочно-лимонное с карамельной присыпкой

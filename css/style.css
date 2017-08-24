@@ -1,19 +1,88 @@
+@font-face {
+				font-style: normal;
+				font-weight: normal;
+				font-family: "Roboto-gllacy";
+								src: url(../font/roboto.woff2) format("woff2"),
+									url(../font/roboto.woff) format("woff");
+			}
+@font-face {
+				font-style: normal;
+				font-weight: bold;
+				font-family: 
+					"Roboto-gllacy";
+					src: url(../font/robotobold.woff2) format("woff2"),
+						url(../font/robotobold.woff) format("woff");
+			}
+@font-face {
+				font-style: normal;
+				font-weight: 600;
+				font-family: 
+					"Roboto-gllacy";
+					src: url(../font/robotomedium.woff2) format("woff2"),
+						url(../font/robotomedium.woff) format("woff");
+			}
 body {
+	margin: 0px;
+	padding: 0px;
+
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: bold;
 	font-family: "Roboto-gllacy", "Arial", sans-serif;
+	color: #ffffff;
+
+	background-color: rgb(132, 157, 143);
+}
+.nav-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+	color: #ffffff;
+}
+.site-navigation li:first-child a:link {
+	color: #ffffff;
+}
+.site-navigation li:first-child a:visited {
+	background-color: #d07058;
+}
+.site-navigation li:first-child a:hover,
+.site-navigation li:first-child a:active {
+	color: #333333;
+	background-color: #ffffff;
+}
+.user-navigation  a:hover,
+.user-navigation  a:focus {
 	color: #323232;
+	background-color: #ffffff;
+}
+.banner h2 {
+	font-size: 35px;
+	line-height: 41px;
+}
+.baner p {
+	font-size: 18px;
+    line-height: 22px;
+}
+.banner-item-btn {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.banner a:hover {
+	color: #ffffff;
+	background-color: #f38267;
+}
+.banner a:active {
+	color: #ffffff;
+	background-color: #de593b;
 }
 
-.promo-item p {
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: normal;
-	color: #323232;
-}
-.promo b {
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: ;
-}
+

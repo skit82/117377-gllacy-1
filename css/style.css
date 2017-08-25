@@ -201,6 +201,45 @@ a:active {
     box-shadow: 0 2px 0 2px rgba(172, 16, 0, 0.64);
     background-image: linear-gradient(to left, #e74a35, #f26843);
 }
+.card-basket {
+	display: none;
+}
+.basket:hover .card-basket {
+	display: block;
+}
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+	list-style: none;
+}
+.breadcrumbs a {
+	text-decoration: underline;
+}
+.page-title h1 {
+	font-size: 25px;
+	line-height: 41px;
+}
+.filter fieldset {
+	border: none;
+}
+.filter legend {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 600;
+}
+select {
+	opacity: 0.2;
+}
+select:hover {
+    background-color: #ffffff;
+}
+input[type="range"]:hover  {
+    color: #ffffff;
+    background-color: #9db1a5;
+    border-radius: 30px;
+    opacity: 0.2;
+}
 .footer-social ul,
 .about-us ul {
     list-style: none;

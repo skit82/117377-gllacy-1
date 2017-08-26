@@ -27,7 +27,6 @@ body {
 
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: bold;
 	font-family: "Roboto-gllacy", "Arial", sans-serif;
 	color: #ffffff;
 
@@ -44,6 +43,7 @@ a:active {
 .nav-navigation {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: bold;
 	color: #ffffff;
 }
 .site-navigation,
@@ -71,9 +71,10 @@ a:active {
 	background-color: #ffffff;
 }
 .slider p {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: center;	
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	text-align: center;	
 }
 .btn-ice {
 	font-size: 32px;
@@ -81,20 +82,20 @@ a:active {
 	text-align: center;
 }
 .slider a:hover {
-    color: #ffffff;
+	color: #ffffff;
 	background-color: #f38267;	
 }
 .slider a:active {
-    color: #ffffff;
+	color: #ffffff;
 	background-color: #de593b;	
 }
-.banner h2 {
+.banner-name {
 	font-size: 35px;
 	line-height: 41px;
 }
-.baner p {
+.banner p {
 	font-size: 18px;
-    line-height: 22px;
+	line-height: 22px;
 }
 .banner-item-btn {
 	font-size: 18px;
@@ -110,12 +111,15 @@ a:active {
 	background-color: #de593b;
 }
 .promo {
-    background-image: url(../img/bg-wafer.jpg);	
+	width: 1146px;
+	height: 306px;
+	border-radius: 10px;
+	background-image: url(../img/bg-wafer.jpg);	
 }
 .promo-new {
 	list-style: none;
 }
-.promo b {
+.promo-title {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 600;
@@ -161,12 +165,12 @@ a:active {
 .mail-list-btn {
 	font-size: 18px;
 	line-height: 24px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 30px;
-    border: none;
-    box-shadow: 0 2px 0 2px rgba(172, 16, 0, 0.64);
-    background-image: linear-gradient(to left, #e74a35, #f26843);
+	text-align: center;
+	color: #ffffff;
+	border-radius: 30px;
+	border: none;
+	box-shadow: 0 2px 0 2px rgba(172, 16, 0, 0.64);
+	background-image: linear-gradient(to left, #e74a35, #f26843);
 }
 .map-list {
 	width: 1200px;
@@ -197,9 +201,9 @@ a:active {
 	line-height: 24px;
 	font-weight: bold;
 	border-radius: 30px;
-    border: none;
-    box-shadow: 0 2px 0 2px rgba(172, 16, 0, 0.64);
-    background-image: linear-gradient(to left, #e74a35, #f26843);
+	border: none;
+	box-shadow: 0 2px 0 2px rgba(172, 16, 0, 0.64);
+	background-image: linear-gradient(to left, #e74a35, #f26843);
 }
 .card-basket {
 	display: none;
@@ -232,17 +236,33 @@ select {
 	opacity: 0.2;
 }
 select:hover {
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
-input[type="range"]:hover  {
-    color: #ffffff;
-    background-color: #9db1a5;
-    border-radius: 30px;
-    opacity: 0.2;
+.filters .filters-input:hover,
+.filters .filters-input:focus {
+	color: #ffffff;
+	background-color: #9db1a5;
+	border-radius: 30px;
+	opacity: 0.2;
+}
+.product-list {
+	list-style: none;
+}
+.pagination-list {
+	list-style: none;
+}
+.pagination-item a:hover,
+.pagination-item a:active {
+	color: #000000;
+	background-color: #ffffff;
+}
+.pagination-item-current a {
+    color: #000000;
+    background-color: #ffffff;
 }
 .footer-social ul,
 .about-us ul {
-    list-style: none;
+	list-style: none;
 }
 .about-us {
 	font-size: 13px;
@@ -250,7 +270,7 @@ input[type="range"]:hover  {
 	font-weight: normal;
 }
 .about-us li:first-child {
-    font-weight: bold;
+	font-weight: bold;
 }
 .footer-copyright {
 	font-size: 12px;
@@ -258,7 +278,7 @@ input[type="range"]:hover  {
 	font-weight: normal;
 }
 .modal {
-    color: #999999;	
+	color: #999999;	
 }
 .modal h2 {
 	font-size: 24px;
@@ -266,8 +286,8 @@ input[type="range"]:hover  {
 	color: #323232;
 	font-weight: 600;
 }
-.name-form input[type="text"],
-.name-form input[type="email"],
+.name-form .name-icon-user,
+.name-form .name-icon-email,
 .name-form textarea {
 	font-size: 16px;
 	line-height: 24px;
@@ -277,12 +297,12 @@ input[type="range"]:hover  {
 	border: 1px solid rgba(178, 178, 178, 0.52);
 }
 .button {
-    font-size: 18px;
+	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
 	color: #ffffff;
 	border-radius: 30px;
-    border: none;
-    box-shadow: 0 2px 0 2px rgba(172, 16, 0, 0.64);
-    background-image: linear-gradient(to left, #e74a35, #f26843);	
+	border: none;
+	box-shadow: 0 2px 0 2px rgba(172, 16, 0, 0.64);
+	background-image: linear-gradient(to left, #e74a35, #f26843);	
 }

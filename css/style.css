@@ -34,7 +34,6 @@ body {
 }
 a {
 	color: #ffffff;
-	text-decoration: none;
 }
 a:hover,
 a:active {
@@ -54,14 +53,11 @@ a:active {
 .user-navigation a {
 	color: #ffffff;
 }
-.site-navigation li:first-child a:link {
-	color: #ffffff;
-}
 .site-navigation li:first-child a:visited {
 	background-color: #d07058;
 }
-.site-navigation li:first-child a:hover,
-.site-navigation li:first-child a:active {
+.site-navigation a:hover,
+.site-navigation a:active {
 	color: #333333;
 	background-color: #ffffff;
 }
@@ -96,6 +92,18 @@ a:active {
 .banner p {
 	font-size: 18px;
 	line-height: 22px;
+}
+.banner-item-one {
+	width: 560px;
+	height: 229px;
+	background-image: url(../img/bg-banner-one.jpg);
+	border-radius: 10px;
+}
+.banner-item-two {
+	width: 560px;
+	height: 229px;
+	background-image: url(../img/bg-banner-two.jpg);
+	border-radius: 10px;
 }
 .banner-item-btn {
 	font-size: 18px;
@@ -154,6 +162,13 @@ a:active {
 	line-height: 22px;
 	font-weight: normal;
 	color: #5a5a5a;
+}
+.mail-list {
+    widows: 560px;
+	height: 220px;
+	background-image: url(../img/bg-post.svg);
+	background-repeat: repeat-y;
+	background-position: #ffffff;	
 }
 .mail-list input {
 	font-size: 16px;
@@ -257,8 +272,8 @@ select:hover {
 	background-color: #ffffff;
 }
 .pagination-item-current a {
-    color: #000000;
-    background-color: #ffffff;
+	color: #000000;
+	background-color: #ffffff;
 }
 .footer-social ul,
 .about-us ul {

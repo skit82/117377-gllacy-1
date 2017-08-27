@@ -167,8 +167,7 @@ a:active {
     widows: 560px;
 	height: 220px;
 	background-image: url(../img/bg-post.svg);
-	background-repeat: repeat-y;
-	background-position: #ffffff;	
+	background-repeat: repeat-y;	
 }
 .mail-list input {
 	font-size: 16px;

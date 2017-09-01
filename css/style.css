@@ -47,7 +47,7 @@ a:active {
 .main-header {
 	outline: 1px solid red;
 }
-.inner-wraper .container {
+.inner-wraper {
 	display: flex;
 	justify-content: space-between;
 }
@@ -187,12 +187,15 @@ a:active {
 	padding: 0px;
 	list-style: none;
 }
+.catalog img {
+	border-radius: 50%;
+}
 .catalog-item {
 	width: 267px
 }
 .promo {
 	width: 1146px;
-	height: 306px;
+	min-height: 306px;
 	border-radius: 10px;
 	background-image: url(../img/bg-wafer.jpg);
 	margin-bottom: 40px;	
@@ -279,6 +282,7 @@ a:active {
 .map-list {
 	width: 1200px;
 	height: 430px;
+	margin-left: -27px;
 	background-image: url(../img/map.jpg);
 }
 .address {
@@ -316,6 +320,12 @@ a:active {
 	display: block;
 }
 .breadcrumbs {
+	padding: 0px;
+	margin: 0px;
+	min-height: 18px;
+	margin-bottom: 10px;
+}
+.breadcrumbs {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: normal;
@@ -324,12 +334,26 @@ a:active {
 .breadcrumbs a {
 	text-decoration: underline;
 }
+.page-title {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 32px;
+}
 .page-title h1 {
 	font-size: 25px;
 	line-height: 41px;
 }
 .filter fieldset {
 	border: none;
+}
+.filter {
+    width: 879px;
+    min-height: 130px;
+    margin-bottom: 40px;
+}
+.filters {
+	display: flex;
+	flex-wrap: wrap;
 }
 .filter legend {
 	font-size: 16px;
@@ -350,9 +374,25 @@ select:hover {
 	opacity: 0.2;
 }
 .product-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 80px;
 	list-style: none;
 }
+.product-item {
+	width: 267px;
+	margin-bottom: 35px;
+}
+.product-item img {
+	border-radius: 50%;
+}
 .pagination-list {
+	padding: 0px;
+	margin: 0px;
+	min-height: 28px;
 	list-style: none;
 }
 .pagination-item a:hover,
@@ -363,6 +403,28 @@ select:hover {
 .pagination-item-current a {
 	color: #000000;
 	background-color: #ffffff;
+}
+.footer-wraper {
+	display: flex;
+	justify-content: space-between;
+}
+.about-us a {
+	margin-left: 30px;
+}
+.footer-social ul {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+.about-us ul {
+	margin: 0px;
+	padding: 0px;
+	width: 350px;
+}
+.footer-copyright {
+	margin: 0px;
+	padding: 0px;
+	width: 200px;
 }
 .footer-social ul,
 .about-us ul {
@@ -382,6 +444,7 @@ select:hover {
 	font-weight: normal;
 }
 .modal {
+	display: none;
 	color: #999999;	
 }
 .modal h2 {

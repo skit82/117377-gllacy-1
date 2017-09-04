@@ -76,7 +76,6 @@ a:active {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: auto;
 	width: 500px;
 }
 .user-navigation {
@@ -86,13 +85,11 @@ a:active {
 }
 .main-header-logo {
 	display: flex;
-	margin-right: 10px;
-}
-.main-header-logo {
 	width: 156px;
 	height: 67px;
-	padding-top: 9px;
-	margin: 0px;
+	margin-top: auto;
+	margin-right: 24px;
+	padding-top: 8px;
 }
 .main-navigation {
 	font-size: 16px;
@@ -160,15 +157,23 @@ a:active {
 }
 .user-navigation .basket-item {
 	position: relative;
+	box-sizing: border-box;
+	width: 117px;
+	height: 37px;
+	margin-top: 20px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	padding-left: 45px;
-	text-decoration: none;
+	line-height: 14px;
 	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	text-decoration: none;
 }
 .basket-item::before {
 	content: "";
 	position: absolute;
 	left: 17px;
-	top: 27px;
+	top: 11px;
 	width: 22px;
 	height: 20px;
 	background-image: url("../img/basket.svg");

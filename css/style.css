@@ -113,7 +113,7 @@ a:active {
 .site-navigation .new-items {
 	position: absolute;
 	left: -20px;
-	top: 65px;
+	top: 60px;
 	width: 150px;
 	min-height: 171px;
 	display: none;
@@ -141,7 +141,7 @@ a:active {
 	display: none;
 }
 .user-navigation {
-	width: 320px;
+	min-width: 262px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -155,16 +155,62 @@ a:active {
 .user-navigation {
 	list-style: none;
 }
+.user-navigation .search {
+	position: relative;
+	box-sizing: border-box;
+	font-size: 0px;
+	width: 32px;
+	margin-top: 26px;
+	padding: 16px;
+	line-height: 0px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+}
+.search::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/loupe.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.user-navigation .login-link {
+	position: relative;
+	box-sizing: border-box;
+	width: 92px;
+	height: 32px;
+	margin-top: 26px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	padding-left: 45px;
+	line-height: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	text-decoration: none;
+}
+.login-link::before {
+	content: "";
+	position: absolute;
+	left: 17px;
+	top: 7px;
+	width: 22px;
+	height: 20px;
+	background-image: url(../img/entrance.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 .user-navigation .basket-item {
 	position: relative;
 	box-sizing: border-box;
 	width: 117px;
-	height: 37px;
-	margin-top: 20px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	margin-top: 26px;
+	padding-top: 12px;
+	padding-bottom: 10px;
 	padding-left: 45px;
-	line-height: 14px;
+	line-height: 10px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 16px;
 	text-decoration: none;
@@ -173,7 +219,7 @@ a:active {
 	content: "";
 	position: absolute;
 	left: 17px;
-	top: 11px;
+	top: 7px;
 	width: 22px;
 	height: 20px;
 	background-image: url("../img/basket.svg");
@@ -183,19 +229,30 @@ a:active {
 .site-navigation a,
 .user-navigation a {
 	display: block;
+	padding: 0 14px;
 	padding-top: 29px;
 	padding-bottom: 38px;
-	padding-right: 28px;
 	vertical-align: middle;
 	color: #ffffff;
 }
-.site-navigation li:first-child a:visited {
-	background-color: #d07058;
-}
 .site-navigation a:hover,
 .site-navigation a:active {
+	margin-top: 26px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	line-height: 10px;
 	color: #333333;
 	background-color: #ffffff;
+	border-radius: 16px;
+	text-decoration: none;
+}
+.site-navigation li:first-child a:visited {
+	margin-top: 26px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	line-height: 10px;
+	background-color: #d07058;
+	text-decoration: none;
 }
 .slider p {
 	font-size: 60px;

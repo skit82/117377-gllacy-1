@@ -408,15 +408,17 @@ input[type="radio"] {
 	background-image: url(../img/bg-banner-two.jpg);
 	border-radius: 10px;
 }
-.banner-one-btn {
+.banner-one-btn,
+.banner-iwo-btn {
 	position: absolute;
 	left: 373px;
 	top: 162px;
-	width: 165px;
-	height: 46px;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
+	padding-left: 23px;
+	padding-right: 23px;
+	line-height: 46px;
 	text-align: center;
 	vertical-align: top;
 	text-decoration: none;
@@ -442,7 +444,53 @@ input[type="radio"] {
 	border-radius: 50%;
 }
 .catalog-item {
+	position: relative;
 	width: 267px
+}
+.catalog-hit {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 61px;
+	height: 61px;
+	font-size: 0px;
+	background-image: url(../img/hit.svg);
+	background-repeat: no-repeat;
+}
+.price-product {
+	position: absolute;
+	min-width: 155px;
+	min-height: 34px;
+	left: 0px;
+	top: 160px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+}
+.catalog-kg {
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: bold;
+	margin-left: 29px;
+}
+.catalog-kg::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 33px;
+    left: 80px;
+    bottom: 55px;
+	background-image: url(../img/ruble.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.name-product {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 600;
+	padding: 0 10px;
+	text-align: center;
+	vertical-align: middle;
 }
 .promo {
 	width: 1146px;
@@ -458,14 +506,19 @@ input[type="radio"] {
 	padding: 0px;
 	list-style: none;
 }
+.promo-name {
+	padding-top: 25px;
+	padding-left: 20px;
+}
 .promo-title {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 600;
 	color: #323232;
 }
-.promo-item {
-	width: 560px;
+.promo-item > p {
+	padding-left: 77px;
+	width: 475px;
 }
 .promo p {
 	font-size: 16px;
@@ -486,14 +539,22 @@ input[type="radio"] {
 	border: 1px solid rgba(194, 206, 199, 0.52);
 	border-radius: 10px;
 }
-.blog span {
-	color: #323232;
+.blog-title {
+	font-size: 16px;
+	line-height: 22px;
 	font-weight: 600;
+	color: #323232;
+	padding-top: 24px;
 }
-.blog a {
+.blog p {
+	width: 280px;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
+	padding-left: 20px;
+}
+.blog a {
+	padding-top: 10px;
 	color: #323232;
 }
 .mail-list {
